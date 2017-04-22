@@ -15,7 +15,6 @@
 <target name ="war" depends="jar">
 <war destfile ="dest/war/moni.war" webxml="F:\Repo_GIT\webcontent\WEB_INF\web.xml"/>
 <fileset dir ="webcontent"/>
-</war>
 </target>
 <target name ="ear" depends="war">
 <ear destfile ="dest/ear/moni.ear" appxml="F:\Repo_GIT\webcontent\META_INF"/>
