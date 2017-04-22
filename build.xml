@@ -1,3 +1,4 @@
+<?xml version ="1.0"?>
 <project name ="project1" default ="ear">
 <target name ="clean">
 <delete dir = "temp"/>
