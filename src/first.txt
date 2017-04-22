@@ -1,0 +1,5 @@
+SVN COMMANDS
+
+svn info --used to know which type of svn is installed.
+svn help --lists all the commands
+svn help cmd name --details of that cmd.

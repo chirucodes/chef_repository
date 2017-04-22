@@ -1,0 +1,23 @@
+<project name ="project1" default ="ear">
+<target name ="clean">
+<delete dir = "temp"/>
+</target>
+<target name ="init" depends ="clean">
+<mkdir dir ="dest/classes"/>
+<mkdir dir ="dest/jar"/>
+<mkdir dir ="dest/war"/>
+<mkdir dir ="dest/ear"/>
+</target>
+<target name ="jar" depends="init">
+<jar destfile ="dest/jar" basedir="dest/classes"/>
+</target>
+<target name ="war" depends="jar">
+<war destfile ="dest/war/moni.war" webxml="F:\Repo_GIT\webcontent\WEB_INF\web.xml"/>
+<fileset dir ="F:\Repo_GIT\webcontent\WEB_INF"/>
+<fileset dir ="C:\Program Files (x86)\apache-tomcat-7.0.77">
+</target>
+<target name ="ear" depends="war">
+<ear destfile ="dest/ear/moni.ear" appxml="F:\Repo_GIT\webcontent\META_INF"/>
+</ear>
+</target>
+</project>
