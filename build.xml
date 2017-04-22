@@ -14,7 +14,7 @@
 <target name ="war" depends="jar">
 <war destfile ="dest/war/moni.war" webxml="F:\Repo_GIT\webcontent\WEB_INF\web.xml"/>
 <fileset dir ="F:\Repo_GIT\webcontent\WEB_INF"/>
-<fileset dir ="C:\Program Files (x86)\apache-tomcat-7.0.77">
+<fileset dir ="C:\Program Files (x86)\apache-tomcat-7.0.77"/>
 </target>
 <target name ="ear" depends="war">
 <ear destfile ="dest/ear/moni.ear" appxml="F:\Repo_GIT\webcontent\META_INF"/>
