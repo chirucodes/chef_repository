@@ -13,7 +13,7 @@
 <jar destfile ="dest/jar/moni.jar" basedir="dest/classes"/>
 </target>
 <target name ="war" depends="jar">
-<war destfile ="dest/war/moni.war" webxml="F:\Repo_GIT\webcontent\WEB_INF\web.xml"/>
+<war destfile ="dest/war/moni.war" webxml="F:\Repo_GIT\webcontent\WEB-INF\web.xml"/>
 <fileset dir ="webcontent"/>
 </target>
 <target name ="ear" depends="war">
