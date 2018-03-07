@@ -1,4 +1,4 @@
-Generated at 2018-03-07 05:30:58 +0000
+Generated at 2018-03-07 06:37:52 +0000
 Chef::Exceptions::Exec: yum_package[apache2] (apache2::default line 21) had an error: Chef::Exceptions::Exec: yum -d0 -e0 -y install httpd24-2.4.27-3.75.amzn1 returned 1:
 STDOUT:  You could try using --skip-broken to work around the problem
  You could try running: rpm -Va --nofiles --nodigest
