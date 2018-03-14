@@ -5,11 +5,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "Terraform_training" {
-        ami = "ami-ae55d2ca"
+        ami = "	ami-9062d0f4"
         instance_type = "t2.micro"
         key_name = "nareash"
    
-user_data              = "${file("userdata.sh")}"
+user_data = "${file("userdata.sh")}"
         tags {
          Name = "chef-practice"
         }
@@ -87,6 +87,5 @@ resource "aws_route_table_association" "a" {
   route_table_id = "${aws_route_table.r.id}"
 
   }
-
 
 
