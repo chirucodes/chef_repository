@@ -66,6 +66,7 @@ template '/etc/init.d/jboss7' do
   group node['root_group']
   notifies :enable, 'service[jboss7]', :delayed
   notifies :restart, 'service[jboss7]', :immediately
+  notifies :start, 'service[jboss7]', :immediately
 end
 
 #jboss7_user node['jboss7']['admin_user'] do
