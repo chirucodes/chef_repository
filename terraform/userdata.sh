@@ -29,4 +29,4 @@ cd $local_path
 echo "Running of cookbooks"
 chef-solo -c solo.rb -j web.json
 cd root/
-\rm -rf chefdk_2.4.17-1_amd64.deb chef-boneyard-chef-repo-605eeda master
+#\rm -rf chefdk_2.4.17-1_amd64.deb chef-boneyard-chef-repo-605eeda master
