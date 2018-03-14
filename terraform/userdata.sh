@@ -7,7 +7,7 @@ echo  "installation of git has been completed"
 local_path="/root/chef_repository/chef/chef-repo"
 git clone https://github.com/duddumounika/chef_repository.git
 echo "cloning from github repository"
-[ -f chefdk_2.4.17-1_amd64.deb ] && echo "chef is already installed" || \
+[ -f chefdk-2.5.3-1.el7.x86_64.rpm ] && echo "chef is already installed" || \
 (
 wget https://packages.chef.io/files/stable/chefdk/2.5.3/el/7/chefdk-2.5.3-1.el7.x86_64.rpm
 rpm -Uvh https://packages.chef.io/files/stable/chefdk/2.4.17/el/7/chefdk-2.4.17-1.el7.x86_64.rpm
