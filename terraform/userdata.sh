@@ -1,6 +1,7 @@
 #!bin/bash
 cd ~
 yum update -y
+echo "updating completed"
 yum install wget -y
 yum install git -y
 echo  "installation of git has been completed"
