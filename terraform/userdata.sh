@@ -1,5 +1,5 @@
 #!bin/bash
-cd /root
+cd ~
 yum update
 yum install wget
 yum install git
