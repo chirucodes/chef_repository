@@ -1,8 +1,8 @@
 #!bin/bash
 cd ~
-yum update
-yum install wget
-yum install git
+yum update -y
+yum install wget -y
+yum install git -y
 echo  "installation of git has been completed"
 local_path="/root/chef_repository/chef/chef-repo"
 git clone https://github.com/duddumounika/chef_repository.git
