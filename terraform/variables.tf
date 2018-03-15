@@ -1,5 +1,6 @@
 variable "aws_key_name" {
 	description = "Use this variable for Pem key"
+	default = "nareash"
 }
 variable "aws_access_key" {
 	description = "Use this variable for access key"
@@ -10,6 +11,7 @@ variable "aws_secret_key" {
 variable "orgName" {
 	description = "Name of your organisation. This will be used for tagging your resources.",
       type = "string"
+default = "virtusa"
 }
 variable "AZ1" {
     description = "CIDR for the whole VPC"
